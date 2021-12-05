@@ -2,10 +2,20 @@
 //	STYLE CSS
 ///////////////////////////////////////////////////////////*/
 
+* {
+    color: white;
+}
+
 body {
     background-color: black;
 }
 
-* {
-    color: white;
+
+
+.navbar {
+    background-color: navy;
+}
+
+.btn-dblue {
+	background-color: dodgerblue;
 }

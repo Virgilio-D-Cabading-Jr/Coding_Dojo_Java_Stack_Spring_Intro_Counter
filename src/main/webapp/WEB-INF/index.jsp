@@ -14,16 +14,16 @@
     <!-- ---- CSS LINKS --------------------------------- -->
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>TITLE</title>
+	<title>Counter</title>
 </head>
 <body>
     	<!-- //// HEADER //////// -->
 	<header>
-		<div class="navbar navbar-dark bg-dark box-shadow">
+		<div class="navbar navbar-dark box-shadow">
 			<div class="container d-flex justify-content-between">
-				<a href="/" class="navbar-brand d-flex align-items-center"> <strong
-					class="text-warning">TITLE</strong>
-				</a> <a class="btn btn-secondary " href="/">HOME</a>
+				<a href="/" class="navbar-brand d-flex align-items-center"> 
+					<strong>Counter</strong>
+				</a> <a class="btn btn-dblue" href="/">HOME</a>
 			</div>
 		</div>
 	</header>
