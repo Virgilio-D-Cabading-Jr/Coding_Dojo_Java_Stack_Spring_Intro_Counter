@@ -40,7 +40,10 @@
 			<div class="btn btn-dblue" onclick="window.location.href='/';">
 				HOME
 			</div>
-			<div class="btn btn-dblue" onclick="window.location.href='/counter/reset';">
+			<div class="btn btn-success" onclick="window.location.href='/counter/addtwo';">
+				ADD 2 TO COUNT
+			</div>
+			<div class="btn btn-danger" onclick="window.location.href='/counter/reset';">
 				RESET COUNT
 			</div>
 		</div>

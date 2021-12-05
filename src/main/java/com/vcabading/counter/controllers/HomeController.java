@@ -32,9 +32,17 @@ public class HomeController {
 		return "counter.jsp";
 	}
 	
+	@GetMapping("/counter/addtwo")
+	public String counterAddTwo(HttpSession session) {
+		Counter counter = new Counter();
+		counter.addNumberToCount(session, 2);
+		return "redirect:/counter";
+	}
+	
 	@GetMapping("/counter/reset")
 	public String counterReset(HttpSession session) {
-		session.setAttribute("count", 0);
+		Counter counter = new Counter();
+		counter.resetCount(session);
 		return "redirect:/counter";
 	}
 }
