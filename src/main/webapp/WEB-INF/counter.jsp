@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!--/////////////////////////////////////////////////////
-//	INDEX JSP
+//	COUNTER JSP
 ///////////////////////////////////////////////////////// -->
 
 <!DOCTYPE html>
@@ -34,9 +34,7 @@
 			<h1>
 				Welcome User
 			</h1>
-			<div class="btn btn-primary" onclick="window.location.href='/counter';">
-				Check Count
-			</div>
+
 		</div>
 	</main>
 
