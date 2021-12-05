@@ -1,0 +1,15 @@
+package com.vcabading.counter.controllers;
+
+/////////////////////////////////////////////////////////////////
+//HOME CONTROLLER
+/////////////////////////////////////////////////////////////////
+
+@Controller
+public class HomeController {
+
+	@GetMapping("/")
+	public String index(Model model) {
+
+		return "index.jsp";
+	}
+}
