@@ -32,9 +32,17 @@
 	<main role="main">
 		<div class="container mt-4">
 			<h1>
-				Welcome User
+				You have visited <a href="/">this site</a>
+				<c:out value="${ count }"></c:out>
+				times.
+					
 			</h1>
-
+			<div class="btn btn-dblue" onclick="window.location.href='/';">
+				HOME
+			</div>
+			<div class="btn btn-dblue" onclick="window.location.href='/counter/reset';">
+				RESET COUNT
+			</div>
 		</div>
 	</main>
 
