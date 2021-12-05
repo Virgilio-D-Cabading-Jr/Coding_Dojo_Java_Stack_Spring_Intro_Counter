@@ -27,6 +27,10 @@ public class Counter {
 		}
 	}
 	
+	public void resetCount(HttpSession session) {
+		session.setAttribute("count", (Integer) 0);
+	}
+	
 	//	//// GETTERS ////////////////////////////////////////
 	
 	public Integer getCount(HttpSession session) {

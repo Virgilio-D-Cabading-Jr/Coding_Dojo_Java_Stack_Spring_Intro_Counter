@@ -24,8 +24,17 @@ public class HomeController {
 	@GetMapping("/counter")
 	public String counter(HttpSession session, Model model) {
 		Counter counter = new Counter();
+		if (session.getAttribute("count") == null) {	// if count is null, set count to zero
+			counter.resetCount(session);
+		}
 		Integer count = counter.getCount(session);
 		model.addAttribute("count", count);
 		return "counter.jsp";
+	}
+	
+	@GetMapping("/counter/reset")
+	public String counterReset(HttpSession session) {
+		session.setAttribute("count", 0);
+		return "redirect:/counter";
 	}
 }
